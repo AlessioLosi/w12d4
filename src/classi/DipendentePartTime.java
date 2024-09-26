@@ -7,14 +7,14 @@ public class DipendentePartTime extends Dipendenti{
     this.orelavorate = orelavorate;}
 @Override
     public double calculateSalary() {
-        return orelavorate*this.stipendio;
+        return orelavorate*this.getStipendio();
     }
     @Override
     public String toString() {
         return "Dipendente{" +
-                "matricola=" + matricola +
+                "matricola=" + this.getMatricola() +
                 ", stipendio=" + this.calculateSalary() +
-                ", dipartimento=" + dipartimenti +
+                ", dipartimento=" + this.getDipartimenti() +
                 '}';
     }
 }

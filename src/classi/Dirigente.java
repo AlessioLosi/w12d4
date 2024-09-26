@@ -8,6 +8,6 @@ public class Dirigente extends Dipendenti {
 
     @Override
     public double calculateSalary() {
-        return this.stipendio;
+        return this.getStipendio();
     }
 }

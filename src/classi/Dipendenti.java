@@ -5,10 +5,27 @@ import interfaces.Checkin;
 import java.util.Random;
 
 public abstract class Dipendenti implements Checkin {
-    public int matricola;
-    public double stipendio;
-    public Dipartimenti dipartimenti;
+    private int matricola;
+    private double stipendio;
+    private Dipartimenti dipartimenti;
     public double OrarioInizio;
+
+
+    public int getMatricola() {
+        return matricola;
+    }
+
+    public double getStipendio() {
+        return stipendio;
+    }
+
+    public Dipartimenti getDipartimenti() {
+        return dipartimenti;
+    }
+
+    public void setDipartimenti(Dipartimenti dipartimenti) {
+        this.dipartimenti = dipartimenti;
+    }
 
     public Dipendenti(double stipendio, Dipartimenti dipartimenti) {
         Random random= new Random();
